@@ -11,7 +11,6 @@ using namespace boost::python;
 
 BOOST_PYTHON_MODULE(hello)
 {
-  /*
   def("greet", greet);
 
   class_<World>("World")
@@ -19,7 +18,6 @@ BOOST_PYTHON_MODULE(hello)
     .def("greet", &World::greet)
     .def("set", &World::set)
    ;
-   */
 
   class_<BaseWrapper, boost::noncopyable>("Base")
     .def("name", &Base::name)
